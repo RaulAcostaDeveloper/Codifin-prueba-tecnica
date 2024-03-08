@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(102, 220, 238);
+  color: rgb(56, 56, 56);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.Card {
+  margin: 20px;
+}
+.Card .insideCard {
+  background-color: white;
+  width: 280px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 20px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 20px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 20px -7px rgba(0, 0, 0, 0.75);
+}
+.Card .insideCard .title, .Card .insideCard .year, .Card .insideCard .genre, .Card .insideCard h3 {
+  font-size: 18px;
+  font-weight: normal;
+}
+.Card .insideCard div {
+  padding: 10px;
+}
+.Card .insideCard .redirectButton {
+  cursor: pointer;
+  font-size: 12px;
+  padding: 10px 20px;
+  background-color: rgb(231, 185, 23);
+  color: rgb(56, 56, 56);
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.Card .insideCard .redirectButton:hover {
+  -webkit-box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+.Card .insideCard:hover {
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.cardSelected .insideCard {
+  background-color: rgb(210, 46, 127);
+  color: white;
+}
+.cardSelected .insideCard .year, .cardSelected .insideCard .genre {
+  font-size: 15px;
+}
+.cardSelected .insideCard .title, .cardSelected .insideCard h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.DisplayCards {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.ContainerSelectRandomCardButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.ContainerSelectRandomCardButton .selectRandomMovieButton {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  background-color: lightseagreen;
+  font-size: 14px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.ContainerSelectRandomCardButton .selectRandomMovieButton:hover {
+  -webkit-box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+.Header {
+  display: flex;
+}
+.Header button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+}
+.Header button img {
+  width: 100%;
+  height: 100%;
+}
+.Header h1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.Header .openedMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(19, 19, 19, 0.534);
+  cursor: pointer;
+  z-index: 1;
+}
+.Header .openedMenu .insideMenu {
+  width: 300px;
+  height: 100%;
+  background-color: white;
+}
+.Header .openedMenu .insideMenu .headerMenu {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid gray;
+}
+.Header .openedMenu .insideMenu .headerMenu img {
+  margin: 10px;
+  width: 40px;
+  border-radius: 50%;
+}
+.Header .openedMenu .insideMenu .insideElement {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 20px;
+  border-bottom: 2px solid gray;
+}
+.Header .openedMenu .insideMenu .insideElement a {
+  text-decoration: none;
+  color: black;
+}
+.Header .openedMenu .insideMenu .insideElement:hover {
+  background-color: gray;
+}
+
+/*# sourceMappingURL=output.css.map */

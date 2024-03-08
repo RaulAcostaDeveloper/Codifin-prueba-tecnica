@@ -8,7 +8,7 @@ $ npm install sass
 
 
 ## Cloning
-$ git clone ...
+$ git clone https://github.com/RaulAcostaDeveloper/Codifin-prueba-tecnica.git
 
 
 ## Running
